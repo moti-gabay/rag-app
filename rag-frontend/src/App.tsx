@@ -39,7 +39,6 @@ function App() {
         throw new Error(errorData.detail || 'Upload failed');
       }
 
-      const data = await response.json();
       setIsFileUploaded(true);
       setMessages([
         { id: Date.now().toString(), sender: 'bot', text: `Successfully loaded: "${selectedFile.name}". You can now ask me questions about it!` }
