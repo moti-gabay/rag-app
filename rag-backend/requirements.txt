@@ -1,21 +1,22 @@
-# ספריות הליבה של LangChain ואורקסטרציה
+# --- LangChain Core & Orchestration ---
 langchain==0.3.0
 langchain-core==0.3.0
 langchain-community==0.3.0
 
-# חיבור למודלים של OpenAI (Embeddings & Chat)
+# --- LLM Provider & Embeddings (OpenAI) ---
 langchain-openai==0.2.0
 
-# בסיס הנתונים הוקטורי (Vector DB)
+# --- Vector Database ---
 chromadb==0.5.5
 
-# תמיכה בטעינת קבצי PDF (לשלב הבא של הפרויקט)
+# --- PDF Document Loading & Utilities ---
 pypdf==4.2.0
+tiktoken==0.7.0
 
-# ניהול משתני סביבה ומפתחות API דרך קובץ .env
+# --- Environment Variables Management ---
 python-dotenv==1.0.1
 
-# כלי עזר לחישוב ואופטימיזציה של אורך הטקסט (Tokens)
-tiktoken==0.7.0
-fastapi 
-uvicorn
+# --- API Server Stack ---
+fastapi==0.110.0
+uvicorn==0.28.0
+python-multipart==0.0.9
